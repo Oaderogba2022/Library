@@ -5,12 +5,12 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.beans.factory.annotation.Autowired;
 
-
+@RequestMapping("/library")
 @RestController
 public class LibraryController {
 
-    private final LibraryService libraryService;
 
+    private final LibraryService libraryService;
 
     @Autowired
     public LibraryController(LibraryService libraryService) {
